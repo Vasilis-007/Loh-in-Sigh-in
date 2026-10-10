@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+    <title>Login & Register Page</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container" id="sign-up">
+            <form>
+                <h1>Create Account</h1>
+                
+                <span>Register with Email</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Enter Password">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container" id="sign-in">
+            <form>
+                <h1>Log in</h1>
+                <DIV CLASS="SOCIAL-ICONS">
+                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+
+                </DIV>
+                <span>Put your email and password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Enter Password">
+                <a href="#">Forgot your password?</a>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1><button class="toggle-prompt" id="loginPrompt" type="button">Already have an account?</button></h1>
+                    <p>Log in to continue.</p>
+                    <button class="hidden" id="loginButton" type="button">Log In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1><button class="toggle-prompt" id="registerPrompt" type="button">Dont have an account?</button></h1>
+                    <p>Create an account to get started.</p>
+                    <button class="hidden" id="registerButton" type="button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
